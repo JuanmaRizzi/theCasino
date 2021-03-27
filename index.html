@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>the pig game</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Nunito&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <section class="jugador jugador--0 jugador--activo">
+            <h2 class="nombre" id="nombre--0">Jugador 1</h2>
+            <p class="score" id="score--0">55</p>
+            <div class="jugando">
+                <p  class="rotulo-jugando">Turno Actual</p>
+                <p class="score-jugando" id="jugando--0">0</p>
+            </div>
+        </section>
+
+        <div  class="btns">
+            <button class="btn btn-nuevo-juego">🎰 Nuevo Juego</button>
+            
+            <img src="4_dado.png" alt="dado jugado" class="dado">
+            
+            <button class="btn btn-tirar-dados">🎲 Tirar los Dados</button>
+            <button class="btn btn-mantener">📥 Mantener</button>
+        </div>
+
+        <section class="jugador jugador--1">
+            <h2 class="nombre" id="nombre--1"> Jugador 2</h2>
+            <p class="score" id="score--1">66</p>
+            <div class="jugando">
+                <p class="rotulo-jugando">Turno Actual</p>
+                <p class="score-jugando" id="jugando--1">0</p>
+            </div>      
+        </section>
+        
+
+        <!-- <img src="img/bkground.jpg" alt="imagen de fondo"> -->
+    </main>
+    
+
+    <script src="index.js"></script>
+</body>
+</html>

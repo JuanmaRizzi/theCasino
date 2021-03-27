@@ -1,0 +1,188 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Bangers', cursive;
+    font-weight: 400;
+    height: 100vh;
+    color: whitesmoke;
+    background-image: linear-gradient(to top left, #753682 0%, #bf2e34 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+
+main{
+    position: relative;
+    width: 100rem;
+    height: 60rem;
+    background-image: url(bkground.jpg);
+    background-color: rgba(255, 255, 255, 0.35);
+    backdrop-filter: blur(200px);
+    filter: blur();
+    box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.25);
+    border-radius: 9px;
+    overflow: hidden;
+    display: flex;
+}
+
+.jugador{
+    flex: 50%;
+    padding: 9rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* transition: all 0.75s; */
+}
+
+.btns{
+    flex: 50%;
+    padding: 9rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all 0.75s;
+}
+
+.jugador{
+    position: relative;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    font-weight: 300;
+    margin-bottom: 1rem;
+    
+}
+
+.score{
+    font-size: 9rem;
+    font-weight: 300;
+    color: rgb(187, 185, 185);
+    margin-bottom: auto;
+}
+/*ver aca porque no se que ondaq*/
+
+.jugador--activo{ 
+    height: 100%;
+    background-color:  rgba(255, 255, 255, 0.4);
+}
+
+.jugador--activo .nombre{
+    font-weight: 700;
+}
+
+.jugador--activo .score{
+    font-weight: 400;
+}
+
+.jugador--activo .jugando{
+    opacity: 1;
+}
+
+.jugando{
+    background-color: rgb(165, 189, 189);
+    opacity: 0.8;
+    border-radius: 12px;
+    counter-reset: #ffffff;
+    width: 105%;
+    padding: 2rem;
+    text-align: center;
+    /* transition: all 0.75s; */
+}
+
+.rotulo-jugando{
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    font-size: 1.7rem;
+    color: #ddd;
+}
+
+.score-jugando{
+    font-size: 3.5rem;
+}
+.btns{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.btn {
+   position: absolute;
+   color: rgb(241, 210, 210);
+   background: none;
+   border: none;
+   font-family: inherit;
+   font-size: 1.8rem;
+   left: 50%;
+   transform: translateX(-50%);
+   color: rgb(241, 239, 239);
+
+   background-color: white;
+   background-color:  rgba(255, 255, 255, 0.6);
+   backdrop-filter: blur(10px);
+
+   padding: 0.7rem;
+   border-radius: 50rem;
+   box-shadow: 0 1.75rem 3.5rem rgba(0, 0, 0, 0.1);
+
+
+}
+
+.btn::first-letter{
+    font-size: 2.4rem;
+    display: inline-block;
+    margin-right: 0.7rem;
+}
+
+.btn-nuevo-juego{
+    
+    margin-bottom: 40rem;
+}
+
+.btn-tirar-dados{
+    margin-top: 25rem;
+}
+
+.btn-mantener{
+     margin-top: 45rem;
+}
+
+.btn:active{   /* ojo con esto; no se que es ni para que sirve */
+    transform: translate(-50%, 3px);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+}
+
+.btn:focus{
+    outline: none;
+}
+
+.dado{
+    position: absolute;
+    height: 10rem;
+    box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.2);
+}
+
+.jugador--ganador{  /*ojo con estos dos que no se que hacen*/
+    background-color: #2f2f2f;
+    height: 100%;
+}
+
+.jugador--ganador .nombre{
+    font-weight: 700;
+    color: #c7365f;
+}
+
+.oculto{
+    display: none;
+}
